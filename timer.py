@@ -6,10 +6,7 @@ def countdown(minutes):
     while seconds:
         mins, secs = divmod(seconds, 60)
         timer = f"{mins:02d}:{secs:02d}"
-        print(
-            f"\r⏳ Осталось: {timer}",
-            end=""
-        )
+        print(f"\r⏳ Осталось: {timer}", end="")
         time.sleep(1)
         seconds -= 1
     print("\n⏰ Время вышло! Сделай перерыв.")
